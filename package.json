@@ -9,6 +9,10 @@
     "deine-mutter": "webpack",
     "dev": "webpack-dev-server"
   },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/stephandittmann/testreact.git"
+  },
   "keywords": [
     "react"
   ],
