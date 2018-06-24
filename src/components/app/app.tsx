@@ -1,6 +1,10 @@
 import './app.scss';
 import React from 'react';
 
+// import ReactStrap-Components
+import { Container, Row, Col } from 'reactstrap';
+import { BrowserRouter } from 'react-router-dom';
+
 //important MainContainers
 import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
@@ -9,10 +13,6 @@ import { Content } from '../content/content';
 //import Menus
 import { LeftMenu } from '../leftmenu/leftmenu';
 import { MobileMenu } from '../mobilemenu/mobilemenu';
-
-// import ReactStrap-Components
-import { Container, Row, Col } from 'reactstrap';
-import { BrowserRouter } from 'react-router-dom';
 
 interface AppProps {}
 interface AppState {}
