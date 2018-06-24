@@ -1,0 +1,32 @@
+#leftNav {
+
+	ul {
+		list-style: none;
+	}
+
+	.menu-link {
+		-webkit-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		-moz-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		-o-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		color: darkgrey;
+		margin: 0 0 1em 0;
+		border-bottom: 1px solid;
+		border-bottom-color: transparent;
+	}
+
+	.menu-link:hover {
+		padding: 0em 0.1em 0.1em 0.3em;
+		border-bottom-color: #a7323e;
+		color: #a7323e;
+	}
+
+	a:hover {
+		color: #a7323e;
+	}	
+
+}

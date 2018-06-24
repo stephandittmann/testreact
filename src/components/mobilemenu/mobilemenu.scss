@@ -1,0 +1,27 @@
+#mobileNav {
+	border-bottom: grey;
+	display: flex;
+
+		UL {
+			list-style: none;
+		}
+
+		.mobile-menu-link {
+			/* 
+			-webkit-transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out -moz-transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out;
+			-o-transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out;
+			transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out; */
+			/* border: 1px solid rgba(221, 121, 7, .5); */
+			color: #fff;
+			background-color: #7e63a1;
+			text-align: center;
+			margin: 10px 15px 0 15px;
+		}
+
+}
+
+@media (min-width(var(--breakpoint-md))) {
+		nav#mobileNav {
+			display: none;
+		}
+  }
