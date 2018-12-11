@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://stephan_dittmann@bitbucket.org/stephan_dittmann/testreact.git"
+    "url": "git://github.com/stephandittmann/testreact.git"
   },
   "keywords": [
     "react"
