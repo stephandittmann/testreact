@@ -10,8 +10,8 @@
     "dev": "webpack-dev-server"
   },
   "repository": {
-  "type": "git",
-  "url": "git://github.com/stephandittmann/testreact.git"
+    "type": "git",
+    "url": "https://stephan_dittmann@bitbucket.org/stephan_dittmann/testreact.git"
   },
   "keywords": [
     "react"
@@ -27,31 +27,32 @@
   "author": "pkf",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^16.0.40",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-router": "^4.0.22",
-    "@types/react-router-dom": "^4.2.4",
-    "@types/reactstrap": "^6.0.0",
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router": "^4.4.2",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/reactstrap": "^6.4.3",
     "css-loader": "^0.28.10",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
-    "ts-loader": "^4.0.1",
+    "ts-loader": "^4.5.0",
     "typescript": "^2.7.2",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.0"
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
-    "bootstrap": "^4.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "jshint": "^2.9.7",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-transition-group": "^2.2.1",
-    "reactstrap": "^6.1.0"
+    "react-transition-group": "^2.5.1",
+    "reactstrap": "^6.5.0"
   }
 }
