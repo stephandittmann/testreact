@@ -12,7 +12,7 @@ module.exports = {
 	devServer: {
 		inline: true,
 		host: '0.0.0.0',
-		port: 90,
+		port: 80,
 		contentBase: './dist',
 		disableHostCheck : true,
 		historyApiFallback : true
