@@ -9,9 +9,8 @@ import { Zeugnisse } from './zeugnisse/zeugnisse';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-interface ContentProps {}
-interface ContentState {}
-
+interface ContentProps { }
+interface ContentState { }
 export class Content extends React.Component<ContentProps, ContentState> {
 	public render(): React.ReactNode {
 		return (
