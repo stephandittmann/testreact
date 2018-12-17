@@ -11,13 +11,19 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 	public render(): React.ReactNode {
 		return (
 			<header>
-				<Row className="header-full-row">
-					<Col xs="12" md={{ size: 9, offset: 0 }} >
-						<h2 id="page-titel">Bewerbung</h2>
+				<Row className="header-title-row">
+					<Col>
+						<h1 className="header-titel">Bewerbung</h1>
 					</Col>
-					<Col md={{ size: 2, offset: 1 }}>
-						<MobileMenu />
+					<Col>
+						<MobileMenu/>
 					</Col>
+				</Row>
+				<Row>
+					<Col md={{ size: 12, offset: 0 }}>
+					
+					<div className="header-line"></div>
+					</Col>				
 				</Row>
 				<Row>
 					<Col>

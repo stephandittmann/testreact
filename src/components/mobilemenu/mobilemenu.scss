@@ -1,7 +1,19 @@
 .mobile-menu {
-	border-bottom: grey;
-	display: flex;
 
+	border-bottom: grey;
+	justify-content: flex-end;
+	flex-flow: column;
+    z-index: 2000;
+	position: absolute;
+	right: 2em;
+
+	.mobile-menu-button {
+
+		width: 12px;
+		height: 12px;
+		
+	}
+	
 		UL {
 			list-style: none;
 		}
@@ -12,8 +24,8 @@
 			-o-transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out;
 			transition: color .4s ease-in-out, border .4s ease-in-out, background .4s ease-in-out; */
 			/* border: 1px solid rgba(221, 121, 7, .5); */
-			color: #fff;
-			background-color: #7e63a1;
+			color: #7e63a1;
+			// background-color: #7e63a1;
 			text-align: center;
 			margin: 10px 15px 0 15px;
 		}

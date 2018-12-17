@@ -1,7 +1,7 @@
 .main-menu{
 
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: space-around;
 
 	.menu-link {
 		-webkit-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
@@ -16,12 +16,20 @@
 		border-bottom: 1px solid;
 		border-bottom-color: transparent;
 		padding: 0 1em;
+		
 	}
 
 	.menu-link:hover {
 		padding: 0 0em;
 		border-bottom-color: #a7323e;
 		color: #a7323e;
+	}
+
+	a {
+
+			font-size: 1.1rem;
+			font-weight: 600;
+
 	}
 
 	a:hover {

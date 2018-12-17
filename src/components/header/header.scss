@@ -1,19 +1,25 @@
 header {
-	padding-top: 0.6rem;
+	padding-top: 1.2rem;
+	padding-bottom: 1rem;
 
-	.header-full-row{
+	.header-title-row {
 
-		padding-bottom: 15px;
-		border-bottom: 1px solid #7e63a1;
-		margin-bottom: 15px;
+		padding-bottom: 1.5rem;
+
+
+		h1 {
+			font-weight: normal;
 		}
 
-	h2 {
-	
-		font-size: 1.8rem;
-		font-weight: bold;
 	}
-	
+
+
+	.header-line {
+
+		border-bottom: 1px solid #7e63a1;
+		margin-bottom: 1.5rem;
+	}
+
 	.orange-box {
 		height: 15px;
 		width: 15px;
