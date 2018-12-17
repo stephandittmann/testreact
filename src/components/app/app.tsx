@@ -11,8 +11,8 @@ import { Footer } from '../footer/footer';
 import { Content } from '../content/content';
 
 //import Menus
-import { LeftMenu } from '../leftmenu/leftmenu';
-/* import { MobileMenu } from '../mobilemenu/mobilemenu'; */
+import { MainMenu } from '../mainmenu/mainmenu';
+import { MobileMenu } from '../mobilemenu/mobilemenu';
 
 //import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,15 +30,14 @@ export class App extends React.Component<AppProps, AppState> {
 							<Col lg={{ size: 10, offset: 1 }}>
 								<Header />
 							</Col>
-							<Col>
-								{/*  <MobileMenu /> */}
+						</Row>
+						<Row className="nav-area">
+							<Col lg={{ size: 10, offset: 1 }}>
+								<MainMenu />
 							</Col>
 						</Row>
-						<Row className="main">
-							<Col sm="3" lg={{ size: 2, offset: 1 }}>
-								<LeftMenu />
-							</Col>
-							<Col sm="9" lg={{ size: 8, offset: 0 }}>
+						<Row className="content-area">
+							<Col lg={{ size: 10, offset: 1 }}>
 								<Content />
 							</Col>
 						</Row>
