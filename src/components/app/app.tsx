@@ -13,6 +13,8 @@ import { Content } from '../content/content';
 //import Menus
 import { LeftMenu } from '../leftmenu/leftmenu';
 /* import { MobileMenu } from '../mobilemenu/mobilemenu'; */
+
+//import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface AppProps {}
