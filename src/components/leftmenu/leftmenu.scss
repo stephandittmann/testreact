@@ -1,8 +1,8 @@
-.main-menu {
+.main-menu{
 
-	ul {
-		list-style: none;
-	}
+	// flex-flow: column;
+	// display: flex;
+	list-style: none;		
 
 	.menu-link {
 		-webkit-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
@@ -19,7 +19,7 @@
 	}
 
 	.menu-link:hover {
-		padding: 0em 0.1em 0.1em 0.3em;
+		padding: 0em 0.1em 0em 0.3em;
 		border-bottom-color: #a7323e;
 		color: #a7323e;
 	}
