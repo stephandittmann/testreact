@@ -10,7 +10,7 @@ export class MobileMenu extends React.Component<
 > {
 	public render(): React.ReactNode {
 		return (
-			<nav id="mobileNav">
+			<nav className="mobile-menu">
 				<ul>
 					<li className="mobile-menu-link">
 						<a href="#">Bewerbung</a>

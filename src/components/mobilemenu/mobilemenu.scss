@@ -1,4 +1,4 @@
-#mobileNav {
+.mobile-menu {
 	border-bottom: grey;
 	display: flex;
 
@@ -19,9 +19,3 @@
 		}
 
 }
-
-@media (min-width(var(--breakpoint-md))) {
-		nav#mobileNav {
-			display: none;
-		}
-  }

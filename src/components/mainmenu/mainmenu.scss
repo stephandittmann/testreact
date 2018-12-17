@@ -1,0 +1,31 @@
+.main-menu{
+
+	flex-flow: row nowrap;
+	justify-content: center;
+
+	.menu-link {
+		-webkit-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		-moz-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		-o-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
+			border 0.4s ease-in-out;
+		color: #333;
+		border-bottom: 1px solid;
+		border-bottom-color: transparent;
+		padding: 0 1em;
+	}
+
+	.menu-link:hover {
+		padding: 0 0em;
+		border-bottom-color: #a7323e;
+		color: #a7323e;
+	}
+
+	a:hover {
+		color: #a7323e;
+	}	
+
+}
