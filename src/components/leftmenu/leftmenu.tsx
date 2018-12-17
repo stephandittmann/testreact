@@ -1,6 +1,7 @@
 import './leftmenu.scss';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { NavItem, NavLink, Nav } from 'reactstrap';
 
 interface LeftMenuState {}
 interface LeftMenuProps {}
@@ -8,26 +9,23 @@ interface LeftMenuProps {}
 export class LeftMenu extends React.Component<LeftMenuProps, LeftMenuState> {
 	public render(): React.ReactNode {
 		return (
-			<nav id="leftNav">
-				<ul>
-					<li className="menu-link">
-						<a href="#">Anschreiben</a>
-					</li>
-					<li className="menu-link">
-						<NavLink to="/">CV</NavLink>
-					</li>
-					<li className="menu-link">
-						{/* <a href="#">Details</a> */}
+				<Nav className="main-menu" vertical>
+					<NavItem className="menu-link">
+						<NavLink to="/home">Anschreiben</NavLink>
+					</NavItem>
+					<NavItem className="menu-link">
+						<NavLink to="/cv">CV</NavLink>
+					</NavItem>
+					<NavItem className="menu-link">
 						<NavLink to="/stats">Stats</NavLink>
-					</li>
-					<li className="menu-link">
-						<a href="#">Work</a>
-					</li>
-					<li className="menu-link">
-						<a href="#">Zeugnisse</a>
-					</li>					
-				</ul>				
-			</nav>
+					</NavItem>
+					<NavItem className="menu-link">
+					<NavLink to="/work">Work</NavLink>
+					</NavItem>
+					<NavItem className="menu-link">
+					<NavLink to="/zeugnisse">Zeugnisse</NavLink>
+					</NavItem>
+				</Nav>
 		);
 	}
 }

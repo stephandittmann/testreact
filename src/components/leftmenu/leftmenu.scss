@@ -1,4 +1,4 @@
-#leftNav {
+.main-menu {
 
 	ul {
 		list-style: none;
@@ -13,8 +13,7 @@
 			border 0.4s ease-in-out;
 		transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
 			border 0.4s ease-in-out;
-		color: darkgrey;
-		margin: 0 0 1em 0;
+		color: #333;
 		border-bottom: 1px solid;
 		border-bottom-color: transparent;
 	}

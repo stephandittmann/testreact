@@ -12,7 +12,8 @@ import { Content } from '../content/content';
 
 //import Menus
 import { LeftMenu } from '../leftmenu/leftmenu';
-import { MobileMenu } from '../mobilemenu/mobilemenu';
+/* import { MobileMenu } from '../mobilemenu/mobilemenu'; */
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface AppProps {}
 interface AppState {}
@@ -24,24 +25,23 @@ export class App extends React.Component<AppProps, AppState> {
 				<div className="app">
 					<Container fluid={true}>
 						<Row>
-							<Col xs="12" lg={{ size: 10, offset: 1 }}>
+							<Col lg={{ size: 10, offset: 1 }}>
 								<Header />
 							</Col>
-						</Row>
-						<Row className="contentRow">
-							<Col xs="12" lg={{ size: 2, offset: 1 }}>
-								
-								<MobileMenu />
-								<LeftMenu />
-								
+							<Col>
+								{/*  <MobileMenu /> */}
 							</Col>
-
-							<Col xs="12" lg={{ size: 8, offset: 0 }}>
+						</Row>
+						<Row className="main">
+							<Col sm="3" lg={{ size: 2, offset: 1 }}>
+								<LeftMenu />
+							</Col>
+							<Col sm="9" lg={{ size: 8, offset: 0 }}>
 								<Content />
 							</Col>
 						</Row>
 						<Row>
-							<Col xs="12" lg={{ size: 10, offset: 1 }}>
+							<Col lg={{ size: 10, offset: 1 }}>
 								<Footer pageNumber={1} />
 							</Col>
 						</Row>
