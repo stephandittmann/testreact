@@ -2,8 +2,7 @@ import './leftmenu.scss';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavItem } from 'reactstrap';
-import {Nav} from 'reactstrap';
-/* import {  NavItem , Nav,  } from 'reactstrap'; */
+import { Nav } from 'reactstrap';
 
 interface LeftMenuState {}
 interface LeftMenuProps {}
