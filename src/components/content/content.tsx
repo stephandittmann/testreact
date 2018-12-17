@@ -18,13 +18,13 @@ export class Content extends React.Component<ContentProps, ContentState> {
 		return (
 			<main>
 				<BrowserRouter>
-				<Switch>
-					<Route path="/home" component={Home} />
-					<Route exact path="/" component={CV} />
-					<Route path="/stats" component={Stats} />
-					<Route path="/work" component={Work} />
-					<Route path="/zeugnisse" component={Zeugnisse} />
-				</Switch>
+					<Switch>
+						<Route path="./home" component={Home} />
+						<Route path="./cv" component={CV} />
+						<Route path="./stats" component={Stats} />
+						<Route path="./work" component={Work} />
+						<Route path="./zeugnisse" component={Zeugnisse} />
+					</Switch>
 				</BrowserRouter>
 			</main>
 		);

@@ -16,16 +16,17 @@
 		url('./fonts/primerprintbold.woff') format('woff');
 }
 
-BODY.body {
+/* BODY.body {
 	 font-family: 'primerprint'; 
-}
+} */
 
 body {
 
+	font-family: 'primerprint'; 
 	background-color: white;
 
-	.container {
-		padding: 1em;
-	}
+/* 	.container {
+		padding: 0em;
+	} */
 
 }
