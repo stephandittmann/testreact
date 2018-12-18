@@ -1,5 +1,5 @@
 import './mobilemenu.scss';
-import React from 'react';
+import React, { Component }  from 'react';
 import { Collapse, Button, CardBody, Card} from 'reactstrap';
 import { NavLink as RouterLink } from 'react-router-dom';
 import { NavItem, NavLink } from 'reactstrap';
@@ -12,7 +12,11 @@ export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState>
 
 	constructor(props: Readonly<MobileMenu> ) {
 		super(props);
-		this.state = { collapse: false };
+		
+		this.state = { 
+			collapse: false,
+		};
+
 		this.toggle = this.toggle.bind(this);
 
 	}
@@ -27,7 +31,7 @@ export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState>
 		return (
 
 			<div className="mobile-menu">
-				<Button color="primary" onClick={this.toggle}>Menü</Button>
+				<Button data-toggle="collapse" color="primary" onClick={this.toggle}>Menü</Button>
 				<Collapse isOpen={this.state.collapse}>
 					<Card>
 						<CardBody>
@@ -66,3 +70,4 @@ export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState>
 		);
 	}
 }
+export default MobileMenu;
