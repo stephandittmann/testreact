@@ -10,7 +10,8 @@ interface MobileMenuProps { }
 
 export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState> {
 
-	constructor(props: Readonly<MobileMenu> ) {
+	constructor(props: Readonly<MobileMenuProps> ) {
+		
 		super(props);
 		
 		this.state = { 
