@@ -1,7 +1,6 @@
 import './header.scss';
 import React from 'react';
 import { Row } from 'reactstrap';
-import { MobileMenu } from '../mobilemenu/mobilemenu';
 import { Col } from 'reactstrap';
 
 interface HeaderProps {}
@@ -12,15 +11,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 		return (
 			<header>
 				<Row className="header-title-row">
-					<Col>
-						<h1 className="header-titel">Bewerbung</h1>
-					</Col>
-					<Col>
-						<MobileMenu/>
+					<Col xs="9" className="header-title">
+						<h1>Bewerbung</h1>
+						<h2>als Mediengestalter Bild/Ton</h2>
 					</Col>
 				</Row>
 				<Row>
-					<Col md={{ size: 12, offset: 0 }}>
+					<Col>
 					
 					<div className="header-line"></div>
 					</Col>				
