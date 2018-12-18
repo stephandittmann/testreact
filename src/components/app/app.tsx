@@ -17,8 +17,8 @@ import { MobileMenu } from '../mobilemenu/mobilemenu';
 //import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-interface AppProps {}
-interface AppState {}
+interface AppProps { }
+interface AppState { }
 
 export class App extends React.Component<AppProps, AppState> {
 	public render(): React.ReactNode {
@@ -26,26 +26,37 @@ export class App extends React.Component<AppProps, AppState> {
 			<BrowserRouter>
 				<div className="app">
 					<Container fluid={true}>
+						<nav className="mobile-nav-container">
 						<Row>
-							<Col lg={{ size: 10, offset: 1 }}>
-								<Header />
+							<Col>
+								<MobileMenu />
 							</Col>
 						</Row>
-						<Row className="nav-area">
-							<Col lg={{ size: 10, offset: 1 }}>
-								<MainMenu />
-							</Col>
-						</Row>
-						<Row className="content-area">
-							<Col lg={{ size: 10, offset: 1 }}>
-								<Content />
-							</Col>
-						</Row>
-						<Row>
-							<Col lg={{ size: 10, offset: 1 }}>
-								<Footer pageNumber={1} />
-							</Col>
-						</Row>
+						</nav>
+						<div className="main-container">
+						
+							<Row>
+								<Col lg={{ size: 10, offset: 1 }}>
+									<Header />
+								</Col>
+							</Row>
+						
+							<Row className="nav-area">
+								<Col lg={{ size: 10, offset: 1 }}>
+									<MainMenu />
+								</Col>
+							</Row>
+							<Row className="content-area">
+								<Col xs="12" lg={{ size: 10, offset: 1 }}>
+									<Content />
+								</Col>
+							</Row>
+							<Row>
+								<Col lg={{ size: 10, offset: 1 }}>
+									<Footer pageNumber={1} />
+								</Col>
+							</Row>
+						</div>
 					</Container>
 				</div>
 			</BrowserRouter>
