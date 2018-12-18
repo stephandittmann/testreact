@@ -4,14 +4,21 @@ $desktop: "(min-width: 1024px)";
 
 .app {
 
-    // background-color: white;
-    color: #333;
+     color: #333;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
     padding: 10px;
+
+
+    // p- tag for app
+
+    p {
+        font-size: 1rem;
+    }
+
 
     A {
 
@@ -27,7 +34,8 @@ $desktop: "(min-width: 1024px)";
 
     .content-area {
 
-        margin: 1.1em 0;
+        // margin: 1rem 0;
+        text-align: justify;
 
     }
 
@@ -38,18 +46,11 @@ $desktop: "(min-width: 1024px)";
     }
 
 
-      .mobile-menu {
+    .mobile-menu {
 
-            display: flex;
-            display:-webkit-flex;
-    
-        }
+        display: flex;
+        display: -webkit-flex;
 
-
-    // p- tag for app
-
-    p {
-        font-size: 1rem;
     }
 
 
@@ -58,39 +59,39 @@ $desktop: "(min-width: 1024px)";
         .nav-area {
 
             display: flex;
-    
+
         }
 
         .mobile-menu {
 
             display: none;
-    
+
         }
 
     }
 
     @media #{$desktop} {
 
-        p {
-            font-size: 1.2rem;
-        }
+      /*   p {
+            font-size: 1rem;
+        } */
 
         .nav-area {
 
-            display: flex;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-    
+            display: flex;/* 
+            margin-top: 0rem;
+            margin-bottom: 2rem; */
+
         }
-        
+
         .mobile-menu {
 
             display: none;
-    
+
         }
 
 
-        
+
     }
 
 }
