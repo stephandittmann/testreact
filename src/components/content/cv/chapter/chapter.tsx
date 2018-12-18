@@ -22,7 +22,8 @@ export class CVChapter extends React.Component<CVChapterProps, CVChapterState> {
 		return (
 			<Row className="cv-chapter">
 				<Col xs="12" md="3">
-					<span>{this.props.range.from}</span> -{' '}
+					<h4>{this.props.worklocation.name}</h4> 
+					<span>{this.props.range.from}</span> - {' '}
 					<span>{this.props.range.to}</span>
 				</Col>
 

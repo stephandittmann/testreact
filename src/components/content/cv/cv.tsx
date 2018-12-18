@@ -2,7 +2,8 @@ import './cv.scss';
 import React from 'react';
 import { Photo } from './photo/photo';
 import { CVChapter } from './chapter/chapter';
-import { InfoBox } from './infobox/infobox';
+
+import { Adress } from './adress/adress';
 
 import { Row, Col } from 'reactstrap';
 
@@ -15,6 +16,9 @@ export interface iCVChapterRange {
 	from: string;
 	to: string;
 }
+export interface iCVWorkLocation {
+	name: string;
+}
 
 export interface iCVChapterActivities {
 	text: string;
@@ -22,6 +26,7 @@ export interface iCVChapterActivities {
 
 export interface iCVChapter {
 	range: iCVChapterRange;
+	worklocation: iCVWorkLocation;
 	activities: iCVChapterActivities[];
 }
 
@@ -39,8 +44,59 @@ export class CV extends React.Component<CVProps, CVState> {
 			chapter: [
 				{
 					range: {
-						from: '06/2016',
+						from: '06/2018',
+						to: '12/2018'
+					},
+
+					worklocation: {
+						name: 'movingimage EVP'
+					},
+
+					activities: [
+						{
+							text: 'Projektleitung Livestream Produktion (agile)'
+						},
+						{
+							text: 'technische Beratung'
+						},
+						{
+							text: 'Produktionsassistenz (Kamera)'
+						},
+						{
+							text: 'Neustrukturierung der Webpräsenz'
+						}
+					]
+				},
+				{
+					range: {
+						from: '09/2015',
 						to: '12/2017'
+					},
+					worklocation: {
+						name: 'der SPIEGEL Hauptstadtbüro',
+					},
+					activities: [
+						{
+							text: 'Werkstudent IT- u. Medien-Administration'
+						},
+						{
+							text: 'technische Betreung der Computer'
+						},
+						{
+							text: 'technische Unterstützung LIVE-Produktion'
+						},
+						{
+							text: 'Schnittassistenz & VFX'
+						}
+					]
+				},
+				{
+					range: {
+						from: '05/2016',
+						to: '08/2016'
+					},
+					worklocation: {
+						name: 'Propeller GmbH Berlin',
 					},
 					activities: [
 						{
@@ -56,11 +112,13 @@ export class CV extends React.Component<CVProps, CVState> {
 							text: 'Schnitt & VFX'
 						}
 					]
-				},
-				{
+				},{
 					range: {
 						from: '09/2011',
 						to: '12/2017'
+					},
+					worklocation: {
+						name: 'der SPIEGEL',
 					},
 					activities: [
 						{
@@ -92,24 +150,16 @@ export class CV extends React.Component<CVProps, CVState> {
 
 	public render(): React.ReactNode {
 		return (
-			<div className="cv">
+			<div className="cv-container">
 				<Row>
 					<Col xs="12" sm="3">
-						<Photo />
-						<InfoBox title="Daten" progress={23}>
-							<p>28.03.1983</p>
-							<p>
-								Steegerstr. 67<br />13359 Berlin
-							</p>
-							<p>+(49)(0)177 648 71 57</p>
-							<p>
-								<a href="mailto:st_dittmann@gmx.net">st_dittmann@gmx.net</a>
-							</p>
-						</InfoBox>
-						<InfoBox title="Sprachkenntnisse" progress={23} />
+						<Row>
+							<Col xs="6" sm="12"><Photo /></Col>
+							<Col><Adress /></Col>
+						</Row>
 					</Col>
 					<Col xs="12" sm="9">
-						<div className="cv-chapter">{this.renderChapter()}</div>
+						<div className="cv-table">{this.renderChapter()}</div>
 					</Col>
 				</Row>
 			</div>

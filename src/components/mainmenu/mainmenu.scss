@@ -1,40 +1,41 @@
-.main-menu{
+.main-menu {
 
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	margin-bottom: 2rem !important;
 
 	.menu-link {
-		-webkit-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
-			border 0.4s ease-in-out;
-		-moz-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
-			border 0.4s ease-in-out;
-		-o-transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
-			border 0.4s ease-in-out;
-		transition: padding 0.4s ease-in-out, color 0.4s ease-in-out,
-			border 0.4s ease-in-out;
-		color: #333;
-		border-bottom: 1px solid;
-		border-bottom-color: transparent;
-		padding: 0rem 0rem 0rem 0rem;
+
+		-webkit-transition: border 0.4s ease-in-out;
+		-moz-transition: 	border 0.4s ease-in-out;
+		-o-transition: 		border 0.4s ease-in-out;
+		transition: 		border 0.4s ease-in-out;
 		
+		border: 1px solid #d97604;
+
+		A {
+
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s linear;
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s linear;
+		-o-transition: color 0.2s ease-in-out, background-color 0.2s linear;
+		transition: color 0.2s ease-in-out, background-color 0.2s linear;
+
+			background-color: #ffffff;
+			color: #d97604;
+			font-size: 1.1rem;
+			font-weight: 600;
+			padding: .3rem 1rem;
+
+		}
+
+		A:hover {
+			color: #ffffff;
+			background-color: #a7323e;
+		}
+
 	}
 
 	.menu-link:hover {
-		padding: 0rem 0rem 0rem 0rem;
-		border-bottom-color: #a7323e;
-		color: #a7323e;
+		border-color: #a7323e;
 	}
-
-	a {
-
-			font-size: 1.1rem;
-			font-weight: 600;
-
-	}
-
-	a:hover {
-		color: #a7323e;
-	}	
 
 }
