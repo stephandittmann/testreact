@@ -22,7 +22,7 @@ export class CVChapter extends React.Component<CVChapterProps, CVChapterState> {
 		return (
 			<Row className="cv-chapter">
 				<Col xs="12" md="3">
-					<h4>{this.props.worklocation.name}</h4> 
+					<h4><a href={this.props.homepage.link} target="blank">{this.props.worklocation.name}</a></h4> 
 					<span>{this.props.range.from}</span> - {' '}
 					<span>{this.props.range.to}</span>
 				</Col>

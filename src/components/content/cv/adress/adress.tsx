@@ -13,9 +13,9 @@ export class Adress extends React.Component<AdressProps, AdressState> {
             <div className="cv-adress">                
                                            
                         <p>Steegerstr. 67<br />13359 Berlin</p>
-                        <p>+(49)(0)177 648 71 57</p>
+                        <p>Tel.: +(49)(0)177 648 71 57</p>
                         <p>
-                            <a href="mailto:st_dittmann@gmx.net">st_dittmann@gmx.net</a>
+                            Mail: <a href="mailto:st_dittmann@gmx.net">st_dittmann@gmx.net</a>
                         </p>
 
             </div>
