@@ -8,10 +8,7 @@ import { Nav } from 'reactstrap';
 interface MobileMenuState { }
 interface MobileMenuProps { }
 
-export class MobileMenu extends React.Component<
-	MobileMenuProps,
-	MobileMenuState
-	> {
+export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState> {
 
 	constructor(props: Readonly<MobileMenu>) {
 		super(props);
@@ -29,34 +26,34 @@ export class MobileMenu extends React.Component<
 
 		return (
 
-			<nav className="mobile-menu">
+			<div className="mobile-menu">
 				<Button color="primary" onClick={this.toggle}>Menü</Button>
 				<Collapse isOpen={this.state.collapse}>
 					<Card>
 						<CardBody>
-							<Nav className="mobile-menu-wrapper">
+							<Nav className="mobile-menulist-wrapper">
 								<NavItem>
-									<NavLink tag={RouterLink} to="/home" className="mobile-menu-link">
+									<NavLink tag={RouterLink} to="/home">
 										Anschreiben
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink tag={RouterLink} to="/cv" className="mobile-menu-link">
+									<NavLink tag={RouterLink} to="/cv">
 										CV
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink tag={RouterLink} to="/stats" className="mobile-menu-link">
+									<NavLink tag={RouterLink} to="/stats">
 										Stats
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink tag={RouterLink} to="/work" className="mobile-menu-link">
+									<NavLink tag={RouterLink} to="/work">
 										Work
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink tag={RouterLink} to="/zeugnisse" className="mobile-menu-link">
+									<NavLink tag={RouterLink} to="/zeugnisse">
 										Zeugnisse
 									</NavLink>
 								</NavItem>
@@ -64,7 +61,7 @@ export class MobileMenu extends React.Component<
 						</CardBody>
 					</Card>
 				</Collapse>
-			</nav>
+			</div>
 
 		);
 	}
