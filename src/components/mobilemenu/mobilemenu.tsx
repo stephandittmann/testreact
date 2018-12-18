@@ -1,5 +1,5 @@
 import './mobilemenu.scss';
-import React, { Component }  from 'react';
+import React, { Component, ReactNode }  from 'react';
 import { Collapse, Button, CardBody, Card} from 'reactstrap';
 import { NavLink as RouterLink } from 'react-router-dom';
 import { NavItem, NavLink } from 'reactstrap';
@@ -10,7 +10,7 @@ interface MobileMenuProps { }
 
 export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState> {
 
-	constructor(props: Readonly<MobileMenuProps> ) {
+	constructor(props: Readonly<MobileMenu> ) {
 		
 		super(props);
 		
@@ -71,4 +71,5 @@ export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState>
 		);
 	}
 }
+
 export default MobileMenu;
