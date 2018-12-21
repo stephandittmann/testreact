@@ -1,22 +1,22 @@
 @font-face {
 	font-family: 'primerprint';
 	font-style: normal;
-	src: url('./fonts/primerprint.eot');
-	src: local('primerprint'),
-		url('./fonts/primerprint.eot') format('embedded-opentype'),
-		url('./fonts/primerprint.woff') format('woff');
+	src: 	url('./fonts/primerprint.eot');
+	src: 	local('primerprint'),
+			url('./fonts/primerprint.eot') format('embedded-opentype'),
+			url('./fonts/primerprint.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'primerprintbold';
 	font-style: normal;
-	src: url('./fonts/primerprintbold.eot');
-	src: local('primerprintbold'),
-		url('./fonts/primerprintbold.eot') format('embedded-opentype'),
-		url('./fonts/primerprintbold.woff') format('woff');
+	src: 	url('./fonts/primerprintbold.eot');
+	src: 	local('primerprintbold'),
+			url('./fonts/primerprintbold.eot') format('embedded-opentype'),
+			url('./fonts/primerprintbold.woff') format('woff');
 }
 
-body {
+BODY {
 
 	font-family: 'primerprint'; 
 	background-color: white;
