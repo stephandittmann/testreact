@@ -5,20 +5,22 @@ import { NavLink as RouterLink } from 'react-router-dom';
 import { NavItem, NavLink } from 'reactstrap';
 import { Nav } from 'reactstrap';
 
-interface MobileMenuState { }
+interface MobileMenuState {
+	collapse: boolean;
+	status: string,
+ 	} 
 interface MobileMenuProps { }
 
 export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState> {
 
-	constructor(props: Readonly<MobileMenu> ) {
+	constructor(props: MobileMenu ) {
 		
 		super(props);
 		
-		this.state = { 
-			collapse: false,
-		};
-
-		this.toggle = this.toggle.bind(this);
+		this.state = { collapse: false, status: 'Closed' }
+		this.toggle = this.toggle.bind(this)
+		this.onExiting = this.onExiting.bind(this)
+		console.log(this.state);
 
 	}
 
@@ -26,6 +28,9 @@ export class MobileMenu extends React.Component<MobileMenuProps,MobileMenuState>
 		this.setState({ collapse: !this.state.collapse });
 	}
 
+	private onExiting() {
+		this.setState({ collapse: true })
+	  }
 
 	public render(): React.ReactNode {
 

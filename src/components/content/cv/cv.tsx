@@ -2,9 +2,7 @@ import './cv.scss';
 import React from 'react';
 import { Photo } from './photo/photo';
 import { CVChapter } from './chapter/chapter';
-
 import { Adress } from './adress/adress';
-
 import { Row, Col } from 'reactstrap';
 
 interface CVProps {}
@@ -16,6 +14,7 @@ export interface iCVChapterRange {
 	from: string;
 	to: string;
 }
+
 export interface iCVWorkLocation {
 	name: string;
 }
@@ -37,6 +36,7 @@ export interface iCVChapter {
 
 export class CV extends React.Component<CVProps, CVState> {
 	constructor(props: CVProps) {
+
 		super(props);
 
 		this.state = {
@@ -159,9 +159,6 @@ export class CV extends React.Component<CVProps, CVState> {
 						},
 						{
 							text: '(Web-)Programmierung'
-						},
-						{
-							text: ''
 						}
 					]
 				}

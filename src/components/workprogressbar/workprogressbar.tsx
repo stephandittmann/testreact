@@ -19,12 +19,11 @@ export class WorkProgressBar extends React.Component<WPBProps, WPBState> {
 					<Col>						
                         <div className="progressbar">
 				        <span>
-					<div className="orange-box" />
-					<h3>{this.props.title}-{this.props.progress}</h3>
-				</span>
-				<div>{this.props.children}</div>
-				<div className="languageContainer" />
-			</div>
+							<div className="orange-box" />
+								<h3>{this.props.title}-{this.props.progress}</h3>
+						</span>
+						<div>{this.props.children}</div>
+						<div className="languageContainer" /></div>
 					</Col>
 				</Row>
 			</div>
