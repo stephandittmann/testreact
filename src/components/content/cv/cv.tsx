@@ -4,7 +4,7 @@ import { Photo } from './photo/photo';
 import { CVChapter } from './chapter/chapter';
 import { Adress } from './adress/adress';
 import { Row, Col } from 'reactstrap';
-import importData from './_workdata.json';
+// import importData from './_workdata.json';
 
 interface CVProps {}
 interface CVState {
@@ -47,7 +47,7 @@ export class CV extends React.Component<CVProps, CVState> {
 
 	public componentWillMount(): void {
 
-		console.log(importData);
+		// console.log(importData);
 
 		this.setState({
 			chapter: [
