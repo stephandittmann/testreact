@@ -9,6 +9,7 @@ interface CVChapterProps extends iCVChapter {}
 interface CVChapterState {}
 
 export class CVChapter extends React.Component<CVChapterProps, CVChapterState> {
+	
 	private renderActivities(): React.ReactNode {
 		let actElements = [];
 		let counter = 0;

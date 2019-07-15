@@ -19,7 +19,7 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['.js', '.jsx', '.tsx', '.css', '.eot', '.woff', '.img']
+		extensions: ['.js', '.jsx', '.tsx', '.css', '.eot', '.woff', '.jpg', '.gif', '.svg', '.json']
 	},
 
 	plugins: [
@@ -81,13 +81,16 @@ module.exports = {
 						}
 					}
 				]
+			},{
+				test: /\.json$/,
+				loader: 'json-loader'
 			}
 		]
-	},
+	}/* ,
 
 	externals: {
         "react": "React",
         "react-dom": "ReactDOM"
-    }
+    } */
 
 };

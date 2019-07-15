@@ -5,12 +5,10 @@ $desktop: "(min-width: 1024px)";
 .app {
 
     font-size: 1rem;
-    // font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
     padding: 10px;
-
   
     // p- tag for app
 
@@ -25,11 +23,11 @@ $desktop: "(min-width: 1024px)";
         color: black;
 
     }
-
+    /*
     A:hover {
         text-decoration: none;
 
-    }
+    } */
 
     .content-area {
 
@@ -60,51 +58,35 @@ $desktop: "(min-width: 1024px)";
 
     @media #{$tablet} {
 
-        .content-area {
-        
+        .content-area {        
             text-align: justify;
-            padding: 2rem 0rem;
-    
+            padding: 2rem 0rem;    
         }
 
         .nav-area {
-
             display: flex;
-
         }
 
         .mobile-menu {
-
             display: none;
-
         }
 
     }
 
     @media #{$desktop} {
 
-        .content-area {
-        
+        .content-area {        
             text-align: start;
-            padding: 5rem 0;
-    
+            padding: 5rem 0;    
         }
 
         .nav-area {
-
-            display: flex;/* 
-            margin-top: 0rem;
-            margin-bottom: 2rem; */
-
+            display: flex;
         }
 
         .mobile-menu {
-
             display: none;
-
         }
-
-
 
     }
 

@@ -10,10 +10,6 @@ import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
 import { Content } from '../content/content';
 
-//import Menus
-import { MainMenu } from '../mainmenu/mainmenu';
-import { MobileMenu } from '../mobilemenu/mobilemenu';
-
 //import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,25 +21,11 @@ export class App extends React.Component<AppProps, AppState> {
 		return (
 			<BrowserRouter>
 				<div className="app">
-					<Container fluid={true}>
-						<nav className="mobile-nav-container">
-						<Row>
-							<Col>
-								<MobileMenu />
-							</Col>
-						</Row>
-						</nav>
+					<Container fluid={true}>											
 						<div className="main-container">
-						
 							<Row>
 								<Col lg={{ size: 10, offset: 1 }}>
 									<Header />
-								</Col>
-							</Row>
-						
-							<Row className="nav-area">
-								<Col lg={{ size: 10, offset: 1 }}>
-									<MainMenu />
 								</Col>
 							</Row>
 							<Row className="content-area">

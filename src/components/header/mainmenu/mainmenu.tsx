@@ -12,7 +12,7 @@ interface MainMenuProps {}
 export class MainMenu extends React.Component<MainMenuProps, MainMenuState> {
 	public render(): React.ReactNode {
 		return (
-			<Nav className="main-menu">
+			<Nav id="main-menu" className="main-menu">
 				<NavItem className="menu-link">
 					<NavLink tag={RouterLink} to="/home">
 						Anschreiben
