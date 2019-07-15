@@ -19,7 +19,7 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['.js', '.jsx', '.tsx', '.css', '.eot', '.woff', ',img']
+		extensions: ['.js', '.jsx', '.tsx', '.css', '.eot', '.woff', '.img']
 	},
 
 	plugins: [
