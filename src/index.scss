@@ -16,9 +16,10 @@
 			url('./fonts/primerprintbold.woff') format('woff');
 }
 
-BODY {
-
-	font-family: 'primerprint'; 
+BODY {	
 	background-color: white;
+}
 
+#container {
+	font-family: 'primerprint';
 }

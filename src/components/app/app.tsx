@@ -25,7 +25,7 @@ export class App extends React.Component<AppProps, AppState> {
 						<div className="main-container">
 							<Row>
 								<Col lg={{ size: 10, offset: 1 }}>
-									<Header />
+									<Header job_name="Typ mit Hut"/>
 								</Col>
 							</Row>
 							<Row className="content-area">
@@ -35,7 +35,7 @@ export class App extends React.Component<AppProps, AppState> {
 							</Row>
 							<Row>
 								<Col lg={{ size: 10, offset: 1 }}>
-									<Footer pageNumber={1} />
+									<Footer pageNumber={36} />
 								</Col>
 							</Row>
 						</div>

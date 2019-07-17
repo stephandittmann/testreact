@@ -5,7 +5,10 @@ import { Col } from 'reactstrap';
 import MobileMenu from './mobilemenu/mobilemenu';
 import { MainMenu } from './mainmenu/mainmenu';
 
-interface HeaderProps {}
+interface HeaderProps {
+	job_name: string;
+	opt?: string;	
+}
 interface HeaderState {}
 
 export class Header extends React.Component<HeaderProps, HeaderState> {
@@ -21,7 +24,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 				</nav>
 				<nav className="main-nav-container nav-area">
 					<Row>
-						<Col lg={{ size: 10, offset: 1 }}>
+						<Col lg={{ size: 12 }}>
 							<MainMenu />
 						</Col>
 					</Row>
@@ -29,7 +32,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 				<Row className="header-title-row">
 					<Col xs="9" className="header-title">
 						<h1>Bewerbung</h1>
-						<h2>als Mediengestalter Bild/Ton</h2>
+						<h2>als {this.props.job_name}</h2>
 					</Col>
 				</Row>
 				<Row>

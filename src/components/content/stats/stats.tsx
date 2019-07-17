@@ -10,18 +10,14 @@ interface StatsState {}
 export class Stats extends React.Component<StatsProps, StatsState> {
 	public render(): React.ReactNode {
 		return (
-
 			<div>
 				<Row>
 					<Col>
-					<InfoBox title="Daten" progress={0}>
-					</InfoBox>
-					<InfoBox title="Sprachkenntnisse" progress={23} />
+						<InfoBox title="Daten" progress={0}></InfoBox>
+						<InfoBox title="Sprachkenntnisse" progress={23}></InfoBox>
 					</Col>
 				</Row>
-			</div>
-			
+			</div>			
 			);
-
 	}
 }

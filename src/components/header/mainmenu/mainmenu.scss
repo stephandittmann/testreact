@@ -1,7 +1,8 @@
-.main-menu {
+#main-menu {
 
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	margin-bottom: 2.5rem;
+	height: 1.2rem;
 
 	.menu-link {
 
@@ -10,7 +11,8 @@
 		-o-transition: 		border 0.4s ease-in-out;
 		transition: 		border 0.4s ease-in-out;
 		
-		border: 1px solid #d97604;
+		border-left: 1px solid #d97604;
+		padding: 0 1.5rem;
 
 		A {
 
@@ -32,6 +34,11 @@
 			background-color: #a7323e;
 		}
 
+	}
+
+	.menu-link:first-child{
+		margin-left: 0;
+		border-left: none;
 	}
 
 	.menu-link:hover {
